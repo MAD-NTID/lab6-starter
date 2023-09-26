@@ -5,7 +5,7 @@
   (paper "A4")
 
   (title_block
-    (title "Lab 6: Designing a Buck Converter Circuit")
+    (title "Lab 6: Design a Buck Converter Circuit")
   )
 
   (lib_symbols
@@ -320,7 +320,7 @@
     (uuid f625cf4d-86c1-469c-ba42-f087b04c659d)
   )
 
-  (text_box "1. Utilize the Texas Instruments WebBench Power Designer tool to design a power circuit employing the LM5148 Buck Controller.\n\n2. Design specifications:\n	Voltage Range: 9V - 18V\n	Output Voltage: 5V\n	Maximum Current: 10A\n\n3. Create a custom symbol for the LM5148 using KiCad's Symbol Editor. Alternatively, find the part on Mouser's website or OctoPart website, download the symbol, and import it into your project."
+  (text_box "1. Utilize the Texas Instruments WebBench Power Designer tool to design a power circuit employing the LM5148 Buck Controller.\n\n2. Design specifications:\n	Voltage Range: 8V - 20V\n	Output Voltage: 5V\n	Maximum Current: 10A\n\n3. Create a custom symbol for the LM5148 using KiCad's Symbol Editor. Alternatively, find the part on Mouser's website or OctoPart website, download the symbol, and import it into your project."
     (at 55.88 166.37 0) (size 119.38 29.21)
     (stroke (width 0) (type dash))
     (fill (type none))
@@ -398,16 +398,25 @@
   (symbol (lib_id "Connector:Screw_Terminal_01x02") (at 262.89 93.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b242c79c-d477-4e25-859d-a696e7e12f4d)
-    (property "Reference" "J?" (at 261.62 90.17 0)
+    (property "Reference" "J2" (at 261.62 90.17 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Screw_Terminal_01x02" (at 265.43 96.52 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (property "Footprint" "" (at 262.89 93.98 0)
+    (property "Footprint" "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" (at 262.89 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 262.89 93.98 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "" (at 262.89 93.98 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Mouser" "" (at 262.89 93.98 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "DigiKey" "" (at 262.89 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 803ec716-14f9-4344-8b55-a36d6c1f4f78))
@@ -415,7 +424,7 @@
     (instances
       (project "lab6-starter"
         (path "/3affd3b9-6236-4a2c-b195-59a0bc7289d9"
-          (reference "J?") (unit 1)
+          (reference "J2") (unit 1)
         )
       )
     )
@@ -424,16 +433,25 @@
   (symbol (lib_id "Connector:Screw_Terminal_01x02") (at 35.56 93.98 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b5c38ccf-6fc2-4ff7-97db-7b7a93deebb2)
-    (property "Reference" "J?" (at 36.83 90.17 0)
+    (property "Reference" "J1" (at 36.83 90.17 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Screw_Terminal_01x02" (at 33.02 96.52 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (property "Footprint" "" (at 35.56 93.98 0)
+    (property "Footprint" "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" (at 35.56 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 35.56 93.98 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "" (at 35.56 93.98 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Mouser" "" (at 35.56 93.98 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "DigiKey" "" (at 35.56 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid f61613e6-a233-4004-a796-7b4058f1f64a))
@@ -441,7 +459,7 @@
     (instances
       (project "lab6-starter"
         (path "/3affd3b9-6236-4a2c-b195-59a0bc7289d9"
-          (reference "J?") (unit 1)
+          (reference "J1") (unit 1)
         )
       )
     )
